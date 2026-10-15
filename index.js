@@ -1,3 +1,5 @@
+import { KVLocker } from './shared.js';
+
 export async function workerFetch(request, env) {
         await initStaticKeys(env);
         const url = new URL(request.url);
