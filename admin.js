@@ -2695,5 +2695,4 @@ async function handleNotificationsPage(env, request) {
 }
 
 
-export { KVLocker };
 
