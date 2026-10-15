@@ -781,7 +781,7 @@ async function withKVLock(env, name, fn, ttlMs = 60000) {
 }
 
 // REQUIERE binding Durable Object: KV_LOCKER -> KVLocker en wrangler.toml.
-class KVLocker {
+export class KVLocker {
     constructor(state) { this.state = state; }
     async fetch(request) {
         const url = new URL(request.url);
